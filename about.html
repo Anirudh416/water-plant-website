@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AQUAPURE</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* About Us section */
+        #about {
+            padding: 40px 20px;
+            background: #f4f4f9;
+            text-align: center;
+            background-image: url(about.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat    ;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0073e6;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        #about .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #about .about-image {
+            flex: 1;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        #about .about-text {
+            flex: 2;
+            max-width: 600px;
+            margin: 20px;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        #about .about-text p {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            #about .about-content {
+                flex-direction: column;
+            }
+
+            #about .about-image,
+            #about .about-text {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="World Water Day Instagram feed Template_page-0001.jpg" alt="AQUAPURE Logo" class="logo">
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <div class="menu-icon" id="menu-icon">
+            <img src="menu.webp" alt="Menu Icon">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="vision.html">Our Vision</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+
+            <div class="about-text">
+                <p>
+                    AQUAPURE is a premium water bottle brand committed to delivering eco-friendly, high-quality
+                    hydration solutions.
+                    We aim to inspire a healthier, more sustainable lifestyle for people across the globe.
+                </p>
+                <p>
+                    With a strong focus on innovation and environmental responsibility, our bottles are perfect for
+                    those who care about both their health and the planet.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 AQUAPURE. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.getElementById('menu-icon');
+            const navLinks = document.getElementById('nav-links');
+
+            menuIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

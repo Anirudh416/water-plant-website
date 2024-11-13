@@ -1,0 +1,83 @@
+/* Refund Policy section */
+#refund {
+    padding: 40px 20px;
+    background: #f4f4f9;
+    text-align: center;
+}
+
+#refund h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+#refund .refund-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+#refund p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#refund ul {
+    list-style: none;
+    padding: 0;
+}
+
+#refund ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+#refund ul li strong {
+    color: #0073e6;
+}
+
+#refund a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+#refund a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #refund .refund-content {
+        padding: 15px;
+    }
+
+    #refund h2 {
+        font-size: 2em;
+    }
+
+    #refund p,
+    #refund ul li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #refund .refund-content {
+        padding: 10px;
+    }
+
+    #refund h2 {
+        font-size: 1.5em;
+    }
+
+    #refund p,
+    #refund ul li {
+        font-size: 0.9em;
+    }
+}

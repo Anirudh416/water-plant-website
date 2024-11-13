@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUAPURE - Pure Hydration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <img src="World Water Day Instagram feed Template_page-0001.jpg" alt="AQUAPURE Logo" class="logo">
+        <h1>Welcome to AQUAPURE</h1>
+        <p>Your trusted partner for clean, sustainable hydration.</p>
+    </header>
+    <nav>
+        <div class="menu-icon" id="menu-icon">
+            <img src="menu.webp" alt="Menu Icon">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="vision.html">Our Vision</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Pure Water, Pure Life</h2>
+            <p>Experience the purity of nature with AQUAPURE. Our water bottles are designed to provide you with the
+                cleanest, freshest water wherever you go.</p>
+            <a href="products.html" class="btn">Explore Our Products</a>
+        </div>
+    </section>
+    <section id="features">
+        <h2>Why Choose AQUAPURE?</h2>
+        <div class="feature">
+            <img src="eco.jpg" alt="Eco-Friendly">
+            <h3>Eco-Friendly</h3>
+            <p>Our bottles are made from sustainable materials, helping you reduce your carbon footprint.</p>
+        </div>
+        <div class="feature">
+            <img src="high.jpg" alt="High Quality">
+            <h3>High Quality</h3>
+            <p>We use the highest quality materials to ensure your water stays fresh and pure.</p>
+        </div>
+        <div class="feature">
+            <img src="design.jpg" alt="Innovative Design">
+            <h3>Innovative Design</h3>
+            <p>Our bottles are designed for convenience and style, making hydration easy and enjoyable.</p>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"AQUAPURE bottles are the best! They keep my water fresh and cool all day long."</p>
+            <h4>- Sarah L.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"I love the eco-friendly aspect of AQUAPURE. It's great to know I'm helping the environment."</p>
+            <h4>- John D.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The design of these bottles is fantastic. They're so easy to carry and use."</p>
+            <h4>- Emily R.</h4>
+        </div>
+    </section>
+    <section id="cta">
+        <h2>Join the AQUAPURE Community</h2>
+        <p>Stay updated with our latest products and special offers. Sign up for our newsletter today!</p>
+        <form action="subscribe.html" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 AQUAPURE. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.getElementById('menu-icon');
+            const navLinks = document.getElementById('nav-links');
+
+            menuIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

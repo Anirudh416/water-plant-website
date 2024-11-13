@@ -1,0 +1,58 @@
+/* Our Vision section */
+#vision {
+    padding: 40px 20px;
+    background: #f4f4f9;
+    text-align: center;
+}
+
+#vision h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+#vision .vision-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+#vision p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #vision .vision-content {
+        padding: 15px;
+    }
+
+    #vision h2 {
+        font-size: 2em;
+    }
+
+    #vision p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #vision .vision-content {
+        padding: 10px;
+    }
+
+    #vision h2 {
+        font-size: 1.5em;
+    }
+
+    #vision p {
+        font-size: 0.9em;
+    }
+}

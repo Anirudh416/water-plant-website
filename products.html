@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - AQUAPURE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="products.css">
+    <style>
+        /* Products section */
+        #products {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #products h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .product-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 1em;
+        }
+
+        .product-card .cost {
+            font-weight: bold;
+            color: #0073e6;
+            margin-top: 10px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .product-card {
+                width: 45%;
+                margin: 20px 2.5%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-card {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="World Water Day Instagram feed Template_page-0001.jpg" alt="AQUAPURE Logo" class="logo">
+        <h1>Our Products</h1>
+    </header>
+    <nav>
+        <div class="menu-icon" id="menu-icon">
+            <img src="menu-icon.png" alt="Menu Icon">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="vision.html">Our Vision</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="pet bottle.jpeg" alt="PET Bottle - Classic AQUAPURE">
+                <h3>Classic AQUAPURE Bottle (PET Bottle)</h3>
+                <p>Perfect for daily hydration with a sleek, leak-proof design.</p>
+                <p class="cost">Cost: ₹10</p>
+            </div>
+            <div class="product-card">
+                <img src="500 ml.jpeg" alt="500ml AQUAPURE Bottle">
+                <h3>500ml AQUAPURE Bottle</h3>
+                <p>Lightweight and compact for convenient everyday use.</p>
+                <p class="cost">Cost: ₹20</p>
+            </div>
+            <div class="product-card">
+                <img src="2 litere.jpeg" alt="2 Litre AQUAPURE Bottle">
+                <h3>2 Litre AQUAPURE Bottle</h3>
+                <p>Ideal for prolonged hydration and outdoor activities.</p>
+                <p class="cost">Cost: ₹40</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 AQUAPURE. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.getElementById('menu-icon');
+            const navLinks = document.getElementById('nav-links');
+
+            menuIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
